@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Simple test server to verify socket communication with mGBA
+Simple test server that mainly sends A button presses to help
+get through Pokémon Red's start menus
 """
 import socket
 import time
 import os
+import random
 
 def main():
     # Make sure screenshots directory exists
@@ -17,9 +19,16 @@ def main():
     host = '127.0.0.1'
     port = 8888
     running = True  # Flag for server loop
+    client = None  # Initialize client to None
     
     try:
-        server.bind((host, port))
+        # First, try to kill any process using the port
+        try:
+            server.bind((host, port))
+        except socket.error as e:
+            print(f"Port {port} is already in use. Make sure no other scripts are running.")
+            return
+            
         server.listen(1)
         print(f"Server listening on {host}:{port}")
         
@@ -32,40 +41,41 @@ def main():
         
         counter = 0
         last_key_time = 0
-        key_interval = 5  # seconds between key presses
+        key_interval = 2  # seconds between key presses
         
         while running:
             try:
-                # Check if there’s incoming data
+                # Check if there's incoming data
                 data = client.recv(1024)
                 if data:
                     message = data.decode('utf-8').strip()
                     print(f"Received: {message}")
-                    
-                    # Handle screenshot messages
-                    if message.startswith("screenshot||"):
-                        screenshot_path = message.split("||")[1]
-                        if os.path.exists(screenshot_path):
-                            print(f"Screenshot exists at {screenshot_path}")
-                            file_size = os.path.getsize(screenshot_path)
-                            print(f"Screenshot size: {file_size} bytes")
-                        else:
-                            print(f"Screenshot does not exist at {screenshot_path}")
             except socket.error as e:
                 # Handle non-blocking socket error
                 if e.args[0] in {10035, 35} or str(e) == 'Resource temporarily unavailable':
                     pass  # Expected for non-blocking sockets
                 else:
                     print(f"Socket error: {e}")
+                    break  # Exit the loop on socket error
 
             # Send a key press every few seconds
             current_time = time.time()
             if current_time - last_key_time > key_interval:
-                key_to_send = counter % 8  # Cycle through directions
+                # 80% chance to press A button
+                if random.random() < 0.8:
+                    key_to_send = 0  # A button
+                else:
+                    # Occasionally press other useful buttons
+                    key_to_send = random.choice([0, 1, 3, 4, 5, 6, 7])  # A, B, START, direction keys
+                
                 print(f"Sending key press: {key_to_send}")
-                client.send(str(key_to_send).encode('utf-8'))
-                last_key_time = current_time
-                counter += 1
+                try:
+                    client.send(str(key_to_send).encode('utf-8') + b'\n')  # Add newline
+                    last_key_time = current_time
+                    counter += 1
+                except:
+                    print("Error sending key press")
+                    break
 
             time.sleep(0.1)  # Prevent CPU hogging
             
@@ -75,8 +85,9 @@ def main():
     except Exception as e:
         print(f"Unexpected Error: {e}")
     finally:
-        print("Closing client connection...")
-        client.close()
+        if client:  # Only close if client was defined
+            print("Closing client connection...")
+            client.close()
         print("Closing server socket...")
         server.close()
         print("Server shut down successfully.")

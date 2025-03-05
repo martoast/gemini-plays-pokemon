@@ -1,5 +1,5 @@
 # Pokémon Red Game AI Notepad
-I am playing Pokémon Red. I need to record important information here.
+I am Gemini and I am playing Pokémon Red. I need to record important information here.
 
 ## Goals
 - Explore the world
@@ -10,8 +10,25 @@ I am playing Pokémon Red. I need to record important information here.
 Just started the game in Pallet Town
 
 
-Naming my rival. I'll name him Gary.
-Naming my rival. I'll name him Gary.
-Naming my rival. I'll name him Gary.
-Naming my rival. I'll name him Gary.
-Naming my rival. I'll name him Gary.
+The screen is the title screen of Pokémon FireRed. The logo, title, and a Charizard are displayed. I will press A to advance past the title screen.
+The game is explaining the controls. I will press A to advance.
+The screen displays the controls. I will press A to advance.
+I am on a screen explaining the controls, and the "ONEXT" prompt in the top-right corner suggests pressing A will advance to the next screen.
+The screen is displaying information about the game. The "@NEXT" prompt in the top-right corner indicates that pressing A will advance to the next screen.
+The screen is displaying information about the game. The "@NEXT" prompt in the top-right corner indicates that pressing A will advance to the next screen.
+The text says to press A to begin the adventure.
+The text says to press A to begin the adventure.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am in dialogue with Professor Oak and need to select the character's gender. I will choose BOY by pressing A.
+I am in dialogue with Professor Oak. I will press A to advance the dialogue.
+I am on the name entry screen for the main character. I will start by selecting the letter A to begin entering my name.
+I am on the name entry screen for the main character. I will select the letter A to begin entering my name.
+I am on the name entry screen. I will select the letter A.

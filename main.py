@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Main launcher for Pokémon Red AI Player
-This script handles starting up all necessary components
+Main Launcher for Pokémon Red AI Player
+Launches game and server socket
 """
 
 import os
@@ -10,19 +10,40 @@ import time
 import subprocess
 import json
 import argparse
-from pathlib import Path
+
+def setup_directories():
+    """Set up required directories"""
+    # Get the project root directory
+    project_root = os.path.dirname(os.path.abspath(__file__))
+    
+    # Create the screenshots directory
+    screenshots_dir = os.path.join(project_root, "data", "screenshots")
+    os.makedirs(screenshots_dir, exist_ok=True)
+    
+    # Create an empty notepad.txt if it doesn't exist
+    notepad_path = os.path.join(project_root, "notepad.txt")
+    if not os.path.exists(notepad_path):
+        with open(notepad_path, "w") as f:
+            f.write("# Pokémon Red Game AI Notepad\n")
+            f.write("I am playing Pokémon Red. I need to record important information here.\n\n")
+    
+    print(f"Created directory: {screenshots_dir}")
+    print(f"Screenshot path: {os.path.join(screenshots_dir, 'screenshot.png')}")
+    print(f"Notepad path: {notepad_path}")
+    print("Directory setup complete!")
 
 def main():
+    """Main function to launch all components"""
     parser = argparse.ArgumentParser(description="Launch Pokémon Red AI Player")
     parser.add_argument("--config", default="config.json", help="Path to config file")
-    parser.add_argument("--rom", default="pokemon_red.gb", help="Path to Pokémon ROM file")
+    parser.add_argument("--rom", default="pokemon-red.gba", help="Path to Pokémon ROM file")
     parser.add_argument("--emulator", default="/Applications/mGBA.app/Contents/MacOS/mGBA", help="Path to emulator executable")
     args = parser.parse_args()
     
-    # Create necessary directories
-    os.makedirs("data/screenshots", exist_ok=True)
+    # Setup directories
+    setup_directories()
     
-    # Check if config exists
+    # Check if config exists and has API key
     if not os.path.exists(args.config):
         print(f"Error: Config file {args.config} not found.")
         print("Please create a config.json file with your Gemini API key.")
@@ -53,7 +74,7 @@ def main():
     # Give the controller a moment to start
     time.sleep(2)
     
-    # Start the emulator without the Lua script (we'll need to load it manually from the UI)
+    # Start the emulator with the ROM
     print("Starting emulator...")
     print("IMPORTANT: Once mGBA opens, go to Tools > Scripting... and load the script from 'emulator/script.lua'")
     emulator_command = [
@@ -63,6 +84,15 @@ def main():
     
     try:
         emulator_process = subprocess.Popen(emulator_command)
+        
+        # Print controller output in real-time
+        def print_output(stream, prefix):
+            for line in iter(stream.readline, b''):
+                print(f"{prefix}: {line.decode().strip()}")
+                
+        from threading import Thread
+        Thread(target=print_output, args=(controller_process.stdout, "Controller")).daemon = True
+        Thread(target=print_output, args=(controller_process.stderr, "Controller Error")).daemon = True
         
         # Wait for the emulator to finish
         emulator_process.wait()
