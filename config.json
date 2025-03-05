@@ -1,0 +1,9 @@
+{
+    "api_key": "AIzaSyAa9TJ_eH7LgQPzkIxgUAZKdJQv0aK9hW0",
+    "model_name": "gemini-2.0-flash",
+    "host": "127.0.0.1", 
+    "port": 8888,
+    "notepad_path": "/Users/alex/Documents/gemini-plays-pokemon/notepad.txt",
+    "screenshot_path": "/Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png",
+    "decision_cooldown": 3
+}
