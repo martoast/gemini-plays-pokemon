@@ -2,7 +2,7 @@
 import os
 import socket
 import time
-import threading
+import threading  # Add this line
 import json
 import re
 import PIL.Image
@@ -10,6 +10,7 @@ import google.generativeai as genai
 import signal
 import sys
 import atexit
+from pokemon_logger import PokemonLogger
 
 class PokemonGameController:
     def __init__(self, config_path='config.json'):
@@ -26,7 +27,6 @@ class PokemonGameController:
         
         # Initialize socket server
         self.server_socket = None
-        self.setup_socket()
         
         # Game state variables
         self.notepad_path = self.config['notepad_path']
@@ -42,15 +42,20 @@ class PokemonGameController:
         os.makedirs(os.path.dirname(self.notepad_path), exist_ok=True)
         os.makedirs(os.path.dirname(self.screenshot_path), exist_ok=True)
         
+        # Initialize the logger
+        self.logger = PokemonLogger(debug_mode=self.debug_mode)
+        
         # Initialize notepad if it doesn't exist
         self.initialize_notepad()
         
-        print(f"Controller initialized with:")
-        print(f"API Key: {self.config['api_key'][:5]}...{self.config['api_key'][-3:]}")
-        print(f"Model: {self.config['model_name']}")
-        print(f"Notepad path: {self.notepad_path}")
-        print(f"Screenshot path: {self.screenshot_path}")
-        print(f"Debug mode: {self.debug_mode}")
+        self.logger.info("Controller initialized")
+        self.logger.debug(f"API Key: {self.config['api_key'][:5]}...{self.config['api_key'][-3:]}")
+        self.logger.debug(f"Model: {self.config['model_name']}")
+        self.logger.debug(f"Notepad path: {self.notepad_path}")
+        self.logger.debug(f"Screenshot path: {self.screenshot_path}")
+        
+        # Set up the socket after logger is initialized
+        self.setup_socket()
         
         # Set up signal handlers for proper shutdown
         signal.signal(signal.SIGINT, self.signal_handler)
@@ -60,26 +65,40 @@ class PokemonGameController:
         atexit.register(self.cleanup)
 
     def setup_socket(self):
-        """Set up the socket server with proper error handling"""
-        # Kill any process using our port
-        try:
-            test_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            test_socket.bind((self.config['host'], self.config['port']))
-            test_socket.close()
-        except socket.error:
-            print(f"Port {self.config['port']} is already in use. Trying to release it...")
-            os.system(f"lsof -ti:{self.config['port']} | xargs kill -9")
-            time.sleep(1)  # Wait for port to be released
-            
+        """Set up the socket server with improved error handling and stability"""
         try:
             # Initialize socket server
             self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            self.server_socket.bind((self.config['host'], self.config['port']))
+            
+            # Add keep-alive options to prevent disconnections
+            self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+            
+            # Try to set TCP keepalive options if available
+            # These options might not be available on all platforms
+            try:
+                # TCP Keepalive options: time, interval, retries
+                self.server_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE, 60)
+                self.server_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 10)
+                self.server_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPCNT, 6)
+            except (AttributeError, OSError):
+                self.logger.debug("TCP keepalive options not fully supported on this platform")
+            
+            # Try to bind to the port
+            try:
+                self.server_socket.bind((self.config['host'], self.config['port']))
+            except socket.error:
+                self.logger.warning(f"Port {self.config['port']} is already in use. Trying to release it...")
+                os.system(f"lsof -ti:{self.config['port']} | xargs kill -9")
+                time.sleep(1)  # Wait for port to be released
+                self.server_socket.bind((self.config['host'], self.config['port']))
+            
             self.server_socket.listen(1)
             self.server_socket.settimeout(1)  # Non-blocking socket with timeout
+            self.logger.success(f"Socket server set up on {self.config['host']}:{self.config['port']}")
+            
         except socket.error as e:
-            print(f"Socket setup error: {e}")
+            self.logger.error(f"Socket setup error: {e}")
             sys.exit(1)
 
     def signal_handler(self, sig, frame):
@@ -96,7 +115,7 @@ class PokemonGameController:
                 return
             self._cleanup_done = True
             
-            print("Cleaning up resources...")
+            self.logger.section("Cleaning up resources...")
             
             # Close client connections
             if self.current_client:
@@ -114,7 +133,7 @@ class PokemonGameController:
                 except:
                     pass
                 
-            print("Cleanup complete.")
+            self.logger.success("Cleanup complete")
             
             # Give GRPC time to shut down (fixes the timeout warning)
             time.sleep(0.5)
@@ -148,18 +167,17 @@ class PokemonGameController:
             }
 
     def initialize_notepad(self):
-        """Initialize the notepad file with a minimal structure"""
+        """Initialize the notepad file with a clearer structure"""
         if not os.path.exists(self.notepad_path):
             os.makedirs(os.path.dirname(self.notepad_path), exist_ok=True)
             timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
             with open(self.notepad_path, 'w') as f:
                 f.write("# Pokémon Game AI Notepad\n\n")
                 f.write(f"Game started: {timestamp}\n\n")
-                f.write("## Game Status\n")
-                f.write("- Just started the game\n\n")
-                f.write("## Objectives\n")
-                f.write("- Progress through the game\n")
-                f.write("- Make strategic decisions\n\n")
+                f.write("## Current Status\n")
+                f.write("- Game just started\n\n")
+                f.write("## Game Progress\n")
+                f.write("- Beginning journey\n\n")
 
     def read_notepad(self):
         """Read the current notepad content"""
@@ -242,22 +260,20 @@ class PokemonGameController:
             # Use provided path or default
             path_to_use = screenshot_path if screenshot_path else self.screenshot_path
             
-            print(f"Loading screenshot from: {path_to_use}")
             if not os.path.exists(path_to_use):
-                print(f"WARNING: Screenshot not found at {path_to_use}")
+                self.logger.error(f"Screenshot not found at {path_to_use}")
                 return None
-                
+            
             # Load the screenshot
             image = PIL.Image.open(path_to_use)
             
-            # Construct the prompt for Gemini with enhanced strategic thinking
+            # Simple prompt without hardcoded game knowledge
             prompt = f"""
-                You are Gemini, an AI playing Pokémon FireRed. Look at the screenshot and make decisions to progress in the game.
+                You are Gemini, an AI playing Pokémon. Look at the screenshot and make decisions to progress in the game.
                 
                 ## Game Context
                 - You are playing Pokémon and need to progress through the game
-                - You're trying to make good strategic decisions based on what you see
-                - Think carefully about what you see on screen and what action makes the most sense
+                - Use the controls to navigate and interact with the game
                 
                 ## Your notepad (your memory):
                 {notepad_content}
@@ -270,12 +286,12 @@ class PokemonGameController:
                 - UP, DOWN, LEFT, RIGHT: Move/Navigate
                 
                 ## Your task:
-                1. Look carefully at the screenshot
-                2. Think about what's happening and what you should do
+                1. Look at the screenshot and determine what's happening
+                2. Think about what button to press next
                 3. Choose ONE button to press
-                4. Update your notepad with important information
+                4. Update your notepad if needed
                 
-                First think step by step about what you see and what you should do. Consider ALL buttons, not just A.
+                Think carefully about what you see and which button would be best to press.
                 
                 Respond in this exact format:
                 THINK: [Your detailed analysis of the current situation and reasoning]
@@ -285,21 +301,32 @@ class PokemonGameController:
                 Buttons must be EXACTLY one of: A, B, START, SELECT, UP, DOWN, LEFT, RIGHT
                 """
             
-            print("Sending screenshot to Gemini...")
+            self.logger.section("Sending Screenshot to Gemini")
             
             # Generate response from Gemini
             response = self.model.generate_content([prompt, image])
             
             if response:
-                print(f"Received response from Gemini: {response.text[:100]}...")
+                self.logger.success("Received response from Gemini")
                 
                 # Parse response for button press and notepad update
                 button_press, notepad_update, thinking = self.parse_llm_response(response.text)
                 self.last_decision_time = current_time
                 
-                # Log the AI's thinking for debugging
-                if thinking:
-                    print(f"AI's thinking: {thinking[:150]}...")
+                # Log the AI's thinking and actions
+                self.logger.ai_thinking(thinking)
+                
+                if button_press is not None:
+                    # Map button index back to name for better logging
+                    button_names = {0: "A", 1: "B", 2: "SELECT", 3: "START", 
+                                4: "RIGHT", 5: "LEFT", 6: "UP", 7: "DOWN",
+                                8: "R", 9: "L"}
+                    button_name = button_names.get(button_press, "UNKNOWN")
+                    self.logger.ai_action(button_name, button_press)
+                
+                if notepad_update:
+                    new_content = notepad_update.split("## Update")[-1] if "## Update" in notepad_update else notepad_update
+                    self.logger.notepad(new_content)
                 
                 return {
                     'button': button_press,
@@ -307,9 +334,10 @@ class PokemonGameController:
                 }
             
         except Exception as e:
-            print(f"Error processing screenshot: {e}")
-            import traceback
-            traceback.print_exc()
+            self.logger.error(f"Error processing screenshot: {e}")
+            if self.debug_mode:
+                import traceback
+                self.logger.debug(traceback.format_exc())
         
         return None
 
@@ -334,37 +362,43 @@ class PokemonGameController:
         # Extract thinking
         if think_match:
             thinking = think_match.group(1).strip()
-            print(f"Extracted thinking: {thinking[:50]}...")
-        
+            
         # Extract button press
         if button_match:
             button_value = button_match.group(1).strip().upper()
             if button_value in button_map:
                 button_press = button_map[button_value]
-                print(f"Parsed button press: {button_value} -> {button_press}")
             else:
                 # Default to A if invalid button
                 button_press = 0
-                print(f"Invalid button '{button_value}', defaulting to A (0)")
+                self.logger.warning(f"Invalid button '{button_value}', defaulting to A (0)")
         
         # Extract notepad update
         if notepad_match:
             notepad_content = notepad_match.group(1).strip()
             if notepad_content.lower() != "no change":
-                # Add timestamp to notepad entries
-                timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
-                notepad_entry = f"\n## Update {timestamp}\n{notepad_content}\n"
+                # Create more meaningful updates by filtering repetitive content
+                # Remove phrases that just talk about pressing buttons
+                filtered_content = re.sub(r"I (will|am going to|should) press [A-Z]+ to.*?\.", "", notepad_content)
+                filtered_content = re.sub(r"I (will|should|am going to|need to) (select|choose|pick).*?\.", "", filtered_content)
+                filtered_content = filtered_content.strip()
                 
-                current_notepad = self.read_notepad()
-                notepad_update = current_notepad + notepad_entry
-                print(f"Adding to notepad: {notepad_content[:50]}...")
+                if filtered_content:
+                    # Add timestamp to notepad entries
+                    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                    
+                    # Add to existing notepad with timestamp
+                    current_notepad = self.read_notepad()
+                    notepad_update = current_notepad + f"\n## Update {timestamp}\n{filtered_content}\n"
         
         return button_press, notepad_update, thinking
 
     def handle_client(self, client_socket, client_address):
         """Handle communication with the emulator client"""
-        print(f"Connected to emulator at {client_address}")
+        self.logger.section(f"Connected to emulator at {client_address}")
         self.current_client = client_socket
+        
+        self.logger.game_state("Waiting for game data...")
         
         while self.running:
             try:
@@ -374,7 +408,6 @@ class PokemonGameController:
                 
                 # Parse the message from the emulator
                 message = data.decode('utf-8').strip()
-                print(f"Received message from emulator: {message[:50]}...")
                 
                 parts = message.split("||")
                 
@@ -384,24 +417,20 @@ class PokemonGameController:
                     
                     # Handle different message types
                     if message_type == "screenshot":
-                        # Process the screenshot and get decision
-                        print(f"Processing screenshot from: {content}")
+                        self.logger.game_state("Received new screenshot from emulator")
                         
                         # Verify the file exists
                         if os.path.exists(content):
-                            file_size = os.path.getsize(content)
-                            print(f"Found screenshot at {content} (size: {file_size} bytes)")
-                            
                             decision = self.process_screenshot(content)
                             
                             if decision:
                                 # Send button press to emulator
                                 if decision['button'] is not None and self.running:
-                                    print(f"Sending button press: {decision['button']}")
                                     try:
                                         client_socket.send(str(decision['button']).encode('utf-8') + b'\n')
+                                        self.logger.success("Button command sent to emulator")
                                     except:
-                                        print("Error sending button press")
+                                        self.logger.error("Failed to send button command")
                                         break
                                 
                                 # Update notepad if needed
@@ -409,29 +438,46 @@ class PokemonGameController:
                                     self.update_notepad(decision['notepad_update'])
                                     self.summarize_notepad_if_needed()
                         else:
-                            print(f"WARNING: Screenshot file not found at {content}")
-                    
-                    # Handle other message types as needed
-                    # (map data, party info, etc.)
+                            self.logger.error(f"Screenshot file not found at {content}")
                 
             except socket.error as e:
                 if e.args[0] != socket.EWOULDBLOCK and str(e) != 'Resource temporarily unavailable':
-                    print(f"Socket error: {e}")
+                    self.logger.error(f"Socket error: {e}")
                     break
             except Exception as e:
-                print(f"Error handling client: {e}")
-                import traceback
-                traceback.print_exc()
+                self.logger.error(f"Error handling client: {e}")
+                if self.debug_mode:
+                    import traceback
+                    self.logger.debug(traceback.format_exc())
                 if not self.running:
                     break
                 continue
         
-        print(f"Disconnected from {client_address}")
+        self.logger.section(f"Disconnected from emulator at {client_address}")
         self.current_client = None
         try:
             client_socket.close()
         except:
             pass
+
+
+    def handle_client_connection(self, client_socket, client_address):
+        """Wrapper around handle_client to properly handle connection errors"""
+        try:
+            self.handle_client(client_socket, client_address)
+        except Exception as e:
+            self.logger.error(f"Client connection error: {e}")
+        finally:
+            # Ensure we close the connection properly
+            if client_socket:
+                try:
+                    client_socket.close()
+                except:
+                    pass
+            
+            # Remove client from our tracking
+            if self.current_client == client_socket:
+                self.current_client = None
 
     def log_debug(self, message):
         """Log debug messages if debug mode is enabled"""
@@ -462,18 +508,31 @@ class PokemonGameController:
             return None
 
     def start(self):
-        """Start the controller server"""
-        print(f"Starting Pokémon Game Controller on {self.config['host']}:{self.config['port']}")
+        """Start the controller server with improved connection handling"""
+        self.logger.header(f"Starting Pokémon Game Controller")
         
         try:
             while self.running:
                 try:
-                    print("Waiting for emulator connection...")
+                    self.logger.section("Waiting for emulator connection...")
                     client_socket, client_address = self.server_socket.accept()
+                    
+                    # Set SO_KEEPALIVE on the client socket
+                    client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+                    
+                    # Try to set TCP keepalive options if available
+                    try:
+                        client_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE, 60)
+                        client_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 10)
+                        client_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPCNT, 6)
+                    except (AttributeError, OSError):
+                        pass
+                    
                     client_socket.setblocking(0)
+                    
                     # Start client handler in a separate thread
                     client_thread = threading.Thread(
-                        target=self.handle_client,
+                        target=self.handle_client_connection,
                         args=(client_socket, client_address)
                     )
                     client_thread.daemon = True
@@ -484,16 +543,20 @@ class PokemonGameController:
                     # Just a timeout, continue the loop
                     continue
                 except KeyboardInterrupt:
-                    print("\nKeyboard interrupt detected. Shutting down...")
+                    self.logger.section("Keyboard interrupt detected. Shutting down...")
                     break
                 except Exception as e:
                     if self.running:  # Only log if we're still supposed to be running
-                        print(f"Error in main loop: {e}")
-                    break
+                        self.logger.error(f"Error in main loop: {e}")
+                        if self.debug_mode:
+                            import traceback
+                            self.logger.debug(traceback.format_exc())
+                        # Short delay to prevent tight error loops
+                        time.sleep(1)
         finally:
             # Ensure we clean up properly
             self.running = False
-            print("Closing all client connections...")
+            self.logger.section("Closing all client connections...")
             for t in self.client_threads:
                 try:
                     t.join(timeout=1)
@@ -501,7 +564,7 @@ class PokemonGameController:
                     pass
             
             self.cleanup()
-            print("Server shut down cleanly.")
+            self.logger.success("Server shut down cleanly")
 
 if __name__ == "__main__":
     controller = PokemonGameController()

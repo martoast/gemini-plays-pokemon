@@ -1,0 +1,3977 @@
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mConnected to emulator at ('127.0.0.1', 49797)
+
+[35m[1mWaiting for emulator connection...
+[35m---------------------------------------------
+[35m----------------------------------
+[32m🎮 Waiting for game data...
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (2757 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in what appears to be my bedroom in Pallet Town. There is a bed to my left, a PC and a TV in fr...
+[90m🔍 DEBUG: Full AI thinking: I am in what appears to be my bedroom in Pallet Town. There is a bed to my left, a PC and a TV in front of me. I should examine the PC or TV, or leave the room. I'll try to leave the room first by moving downwards.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (2757 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm inside my house at the beginning of the game. I need to leave the house and explore Pallet Town....
+[90m🔍 DEBUG: Full AI thinking: I'm inside my house at the beginning of the game. I need to leave the house and explore Pallet Town. To do that, I should move towards the exit.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3693 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in what appears to be my bedroom in Pallet Town. I should probably interact with the PC to see i...
+[90m🔍 DEBUG: Full AI thinking: I'm in what appears to be my bedroom in Pallet Town. I should probably interact with the PC to see if there's anything useful there, then leave the room.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4590 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am standing in front of a TV connected to a NES. The text box says that AAA played with the NES. I...
+[90m🔍 DEBUG: Full AI thinking: I am standing in front of a TV connected to a NES. The text box says that AAA played with the NES. I should probably interact with the TV to see if there's anything interesting.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4592 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my room in Pallet Town, and the game says "It's time to go!". I should leave the room and exp...
+[90m🔍 DEBUG: Full AI thinking: I'm in my room in Pallet Town, and the game says "It's time to go!". I should leave the room and explore the town. I need to move towards the bottom of the screen to exit the room.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (2757 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my bedroom at the start of the game. The logical thing to do is to leave the room and explor...
+[90m🔍 DEBUG: Full AI thinking: I am in my bedroom at the start of the game. The logical thing to do is to leave the room and explore. I will press UP to move towards the exit of the room.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3693 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in what appears to be my room. I should investigate the object in the middle of the room, it co...
+[90m🔍 DEBUG: Full AI thinking: I am in what appears to be my room. I should investigate the object in the middle of the room, it could be a useful item or a computer. Let's try interacting with it by pressing A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4590 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The character is standing in front of a TV/console and an interaction message is displayed. I should...
+[90m🔍 DEBUG: Full AI thinking: The character is standing in front of a TV/console and an interaction message is displayed. I should press 'A' to interact with it.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4592 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my character's room, and the dialogue says "It's time to go!". This means I should leave the ...
+[90m🔍 DEBUG: Full AI thinking: I'm in my character's room, and the dialogue says "It's time to go!". This means I should leave the house and begin my Pokémon adventure. I'll move down to exit the room.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (2757 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I appear to be in my bedroom. It's time to leave and start my adventure. I should move towards the e...
+[90m🔍 DEBUG: Full AI thinking: I appear to be in my bedroom. It's time to leave and start my adventure. I should move towards the exit, which is likely downwards.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (2757 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my bedroom in Pallet Town at the start of the game. I should probably go downstairs and see w...
+[90m🔍 DEBUG: Full AI thinking: I'm in my bedroom in Pallet Town at the start of the game. I should probably go downstairs and see what's going on. I need to move down.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (2757 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my bedroom at the start of the game. I should check the PC to see if there's anything useful,...
+[90m🔍 DEBUG: Full AI thinking: I'm in my bedroom at the start of the game. I should check the PC to see if there's anything useful, and then head downstairs to begin my adventure.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3693 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my bedroom. I should check the PC and then go downstairs to talk to my mom, then leave the h...
+[90m🔍 DEBUG: Full AI thinking: I am in my bedroom. I should check the PC and then go downstairs to talk to my mom, then leave the house to explore Pallet Town. First, I will go to the PC and interact with it.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4602 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my room and I just played with the NES. I should probably leave the house now to progress. I ...
+[90m🔍 DEBUG: Full AI thinking: I'm in my room and I just played with the NES. I should probably leave the house now to progress. I should move towards the bottom of the screen to exit.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4602 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my bedroom and I'm standing in front of the TV/console. The text indicates I just played with...
+[90m🔍 DEBUG: Full AI thinking: I'm in my bedroom and I'm standing in front of the TV/console. The text indicates I just played with it. I should probably explore the rest of my room and the house. I'll start by moving up.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4602 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my room. The text at the bottom says I played with the NES. I should probably explore the roo...
+[90m🔍 DEBUG: Full AI thinking: I'm in my room. The text at the bottom says I played with the NES. I should probably explore the room a bit more. I see a PC and a bed, and stairs. I should probably check the PC first, so I should walk up to it.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4602 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The character is standing in front of the television set and has just played with the NES. I should ...
+[90m🔍 DEBUG: Full AI thinking: The character is standing in front of the television set and has just played with the NES. I should now move the character to explore the house, starting with going up the screen.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4602 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The character is standing in front of a TV. The text at the bottom of the screen indicates the chara...
+[90m🔍 DEBUG: Full AI thinking: The character is standing in front of a TV. The text at the bottom of the screen indicates the character "played with the NES". This likely means interacting with the TV will progress the story. I should press A to interact.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[31m❌ Screenshot file not found at /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+screenshot
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4287 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my bedroom at the start of the game. I should check the PC to see if there are any useful it...
+[90m🔍 DEBUG: Full AI thinking: I am in my bedroom at the start of the game. I should check the PC to see if there are any useful items, like a potion, there.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3693 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my room at the start of the game. There's a PC in front of me. I should probably interact wit...
+[90m🔍 DEBUG: Full AI thinking: I'm in my room at the start of the game. There's a PC in front of me. I should probably interact with it.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4604 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am currently in my bedroom. It seems I am interacting with my video game console. I should press A...
+[90m🔍 DEBUG: Full AI thinking: I am currently in my bedroom. It seems I am interacting with my video game console. I should press A to continue the interaction.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mDisconnected from emulator at ('127.0.0.1', 49797)
+[35m--------------------------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mCleaning up resources...
+[35m------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mCleaning up resources...
+[35m------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mConnected to emulator at ('127.0.0.1', 49912)
+
+[35m[1mWaiting for emulator connection...
+[35m---------------------------------------------
+[35m----------------------------------
+[32m🎮 Waiting for game data...
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (8707 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I appear to be in Pallet Town, based on my notepad. I should explore the town. Based on the layout o...
+[90m🔍 DEBUG: Full AI thinking: I appear to be in Pallet Town, based on my notepad. I should explore the town. Based on the layout of the town, I can move up to approach the house in front of me.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3080 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm inside a house. There's a woman standing by a table. I should probably talk to her. To do that, ...
+[90m🔍 DEBUG: Full AI thinking: I'm inside a house. There's a woman standing by a table. I should probably talk to her. To do that, I need to walk towards her, which means moving up.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[31m❌ Screenshot file not found at /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+screenshot
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4387 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in a building, presumably my house. I should explore the area and talk to the woman standing nea...
+[90m🔍 DEBUG: Full AI thinking: I'm in a building, presumably my house. I should explore the area and talk to the woman standing near the table. I will walk towards her.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mCleaning up resources...
+
+[35m[1mDisconnected from emulator at ('127.0.0.1', 49912)
+[35m------------------------
+[35m--------------------------------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[33m⚠️ Port 8888 is already in use. Trying to release it...
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mConnected to emulator at ('127.0.0.1', 50076)
+
+[35m[1mWaiting for emulator connection...
+[35m---------------------------------------------
+[35m----------------------------------
+[32m🎮 Waiting for game data...
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4259 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is speaking to me. I need to advance the dialogue by pressing the A button.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4232 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is welcoming me to the world of Pokémon. This is part of the intro sequence. I need to...
+[90m🔍 DEBUG: Full AI thinking: Professor Oak is welcoming me to the world of Pokémon. This is part of the intro sequence. I need to advance through the dialogue. Pressing "A" should do this.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4055 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is introducing himself. I should press A to advance the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4209 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is introducing himself and explaining about Pokémon. I need to press A to continue thr...
+[90m🔍 DEBUG: Full AI thinking: Professor Oak is introducing himself and explaining about Pokémon. I need to press A to continue through the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4674 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is talking. I need to advance the dialogue. Pressing A will likely do that.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (5220 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is talking and explaining about Pokémon. I should press A to continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (5565 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is giving an introduction to the world of Pokémon. The red arrow indicates there is mo...
+[90m🔍 DEBUG: Full AI thinking: Professor Oak is giving an introduction to the world of Pokémon. The red arrow indicates there is more text to read. I should press A to continue reading.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4934 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is talking. I need to advance the dialogue to progress. Pressing A will do that.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (5165 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am talking to Professor Oak. I should continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4256 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is asking me to tell him about myself, which presumably means choosing my character na...
+[90m🔍 DEBUG: Full AI thinking: Professor Oak is asking me to tell him about myself, which presumably means choosing my character name and gender. I should press A to continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (1735 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking for my gender. I must select one. I don't know if there is a gender difference in...
+[90m🔍 DEBUG: Full AI thinking: The game is asking for my gender. I must select one. I don't know if there is a gender difference in the game, but I will select "boy". I must use the DOWN button to select "boy".
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (2170 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking me to select my gender. I will select "BOY" to play as a boy character. I need to...
+[90m🔍 DEBUG: Full AI thinking: The game is asking me to select my gender. I will select "BOY" to play as a boy character. I need to move the cursor to BOY first, then confirm with A.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (2180 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking me to choose my character's gender. I will choose "BOY" to play as a male charact...
+[90m🔍 DEBUG: Full AI thinking: The game is asking me to choose my character's gender. I will choose "BOY" to play as a male character. I will press A to confirm my choice.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4231 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking for my name. I need to input my name. To do this I'll have to use the A button to...
+[90m🔍 DEBUG: Full AI thinking: The game is asking for my name. I need to input my name. To do this I'll have to use the A button to select the letters. For now, I need to accept this prompt, so I'll press A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4196 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m⚠️ Invalid button 'G', defaulting to A (0)
+[33m🤔 AI THINKING: I am being asked to input my name. I will start by selecting letters to input my name. I'll start wi...
+[90m🔍 DEBUG: Full AI thinking: I am being asked to input my name. I will start by selecting letters to input my name. I'll start with "G"
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4204 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being prompted to enter my name. The cursor is currently positioned over the letter "A". I will...
+[90m🔍 DEBUG: Full AI thinking: I am being prompted to enter my name. The cursor is currently positioned over the letter "A". I will select this letter as the first letter of my name.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4244 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being asked to input my name. I will start by choosing the letter A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4289 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking for my name. I should choose a name. I will start typing my name "Gemini" by sele...
+[90m🔍 DEBUG: Full AI thinking: The game is asking for my name. I should choose a name. I will start typing my name "Gemini" by selecting the letter "G" first. I need to navigate to the "GHI" section.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4241 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being asked to name my character. I will choose the default name, Ash, and then press START to ...
+[90m🔍 DEBUG: Full AI thinking: I am being asked to name my character. I will choose the default name, Ash, and then press START to confirm and move to the next step. I should navigate to the letter 'S' and 'H' using the directional buttons before pressing START. For now, I need to move the selector to the right, to the letter 'B'.
+[36m👆 AI ACTION: Pressing [1mRIGHT[22m (index: 4)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4222 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is prompting me to enter my name. I should choose a name to proceed. I'll start by selectin...
+[90m🔍 DEBUG: Full AI thinking: The game is prompting me to enter my name. I should choose a name to proceed. I'll start by selecting the letter "A".
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4283 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being asked to name my character. The default name is "AAAE". I should give a proper name. I wi...
+[90m🔍 DEBUG: Full AI thinking: I am being asked to name my character. The default name is "AAAE". I should give a proper name. I will choose 'ASH' for my character's name. First, I will move to the letter 'S'.
+[36m👆 AI ACTION: Pressing [1mRIGHT[22m (index: 4)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4279 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being prompted to enter my name. I can use the directional buttons to choose a letter and A to ...
+[90m🔍 DEBUG: Full AI thinking: I am being prompted to enter my name. I can use the directional buttons to choose a letter and A to select it, and then use the "OK" button to confirm when I'm done. I will keep the name "AAAE" for now and press start to confirm.
+[34m👆 AI ACTION: Pressing [1mSTART[22m (index: 3)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4234 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being asked to input my name. I can choose different letters using the D-pad, and the 'select' ...
+[90m🔍 DEBUG: Full AI thinking: I am being asked to input my name. I can choose different letters using the D-pad, and the 'select' button appears to allow me to change to lower case. For now, I will just add another letter.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4550 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking to confirm my name, which is AAAE. I should confirm by selecting YES.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3612 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The old man is talking about his grandson. I need to continue the dialogue by pressing the A button.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3964 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in a conversation with my rival. I need to advance the dialogue by pressing the A button.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4467 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm being asked to name the rival character. Since "GREEN" is an available option, it is likely the ...
+[90m🔍 DEBUG: Full AI thinking: I'm being asked to name the rival character. Since "GREEN" is an available option, it is likely the correct one according to the game's lore. I will select "GREEN" as the rival's name.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4239 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking for my rival's name. I should enter a name for my rival. I will start by entering...
+[90m🔍 DEBUG: Full AI thinking: The game is asking for my rival's name. I should enter a name for my rival. I will start by entering 'B'.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4266 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being prompted to name my rival. I will name him Gary, starting with the letter 'A'.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4291 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being prompted to name my rival. I will keep the default name for now. I will press "START" to ...
+[90m🔍 DEBUG: Full AI thinking: I am being prompted to name my rival. I will keep the default name for now. I will press "START" to confirm and move on with the game.
+[34m👆 AI ACTION: Pressing [1mSTART[22m (index: 3)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4274 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am being prompted to enter my rival's name. The default name is "AA". I should give my rival a pro...
+[90m🔍 DEBUG: Full AI thinking: I am being prompted to enter my rival's name. The default name is "AA". I should give my rival a proper name. I will start by changing the first letter to "G".
+[36m👆 AI ACTION: Pressing [1mRIGHT[22m (index: 4)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4309 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am currently naming my rival. I want to name him "Gary." The cursor is on "AA". I need to navigate...
+[90m🔍 DEBUG: Full AI thinking: I am currently naming my rival. I want to name him "Gary." The cursor is on "AA". I need to navigate the selection menu to choose the letters to spell "Gary." I will start with "W".
+[36m👆 AI ACTION: Pressing [1mRIGHT[22m (index: 4)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4302 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m⚠️ Invalid button 'G', defaulting to A (0)
+[33m🤔 AI THINKING: I'm being asked to name my rival. I'll start by naming him "Gary". I will start typing the letter 'G...
+[90m🔍 DEBUG: Full AI thinking: I'm being asked to name my rival. I'll start by naming him "Gary". I will start typing the letter 'G' so I need to navigate to 'GHI' on the selection screen.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4300 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m⚠️ Invalid button 'G', defaulting to A (0)
+[33m🤔 AI THINKING: I'm being asked to name my rival. I will name him "Gary". Currently, it says "AA". I need to pick th...
+[90m🔍 DEBUG: Full AI thinking: I'm being asked to name my rival. I will name him "Gary". Currently, it says "AA". I need to pick the letters to name him Gary. First, I'll move the cursor to "G".
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4348 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am currently naming my rival. I will just use the default name of "Gary" for now. I will accomplis...
+[90m🔍 DEBUG: Full AI thinking: I am currently naming my rival. I will just use the default name of "Gary" for now. I will accomplish this by picking the first "A", then "A" again.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4341 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m⚠️ Invalid button 'G', defaulting to A (0)
+[33m🤔 AI THINKING: I am being asked to name my rival. I will name him "Gary". I will press the button that selects "G" ...
+[90m🔍 DEBUG: Full AI thinking: I am being asked to name my rival. I will name him "Gary". I will press the button that selects "G" first.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4344 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m⚠️ Invalid button 'G', defaulting to A (0)
+[33m🤔 AI THINKING: I am naming my rival. I will name him Gary, so I need to select 'G' first.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mDisconnected from emulator at ('127.0.0.1', 50076)
+[35m--------------------------------------------------
+
+[35m[1mCleaning up resources...
+[35m------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[33m⚠️ Port 8888 is already in use. Trying to release it...
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mConnected to emulator at ('127.0.0.1', 50463)
+
+[35m[1mWaiting for emulator connection...
+[35m---------------------------------------------
+[35m----------------------------------
+[32m🎮 Waiting for game data...
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4768 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The text box is giving me some guidance about the game. I should continue to advance the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4756 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I have received a message, likely an introduction to the game's mechanics. The message is displayed ...
+[90m🔍 DEBUG: Full AI thinking: I have received a message, likely an introduction to the game's mechanics. The message is displayed on screen, and the option to go to the next message or go back is available. I should proceed to the next message.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4705 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is prompting me to press the A button to start my adventure.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3339 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am now face-to-face with Professor Oak. I need to interact with him to continue the story.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4259 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is talking. I should press A to continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4232 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is welcoming me to the world of Pokémon. I should press A to continue through the dial...
+[90m🔍 DEBUG: Full AI thinking: Professor Oak is welcoming me to the world of Pokémon. I should press A to continue through the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4055 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is introducing himself. I should press A to advance the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4672 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is introducing himself. I should press A to advance the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (5220 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is talking about Pokémon. I need to advance the dialogue to continue the story.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (5574 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is talking. I should continue the dialogue by pressing A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4934 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is talking to me. I should advance the dialogue by pressing A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (5213 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is talking. I need to press A to advance the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4301 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: Professor Oak is asking me to tell him a little about myself, which means he is going to ask me to e...
+[90m🔍 DEBUG: Full AI thinking: Professor Oak is asking me to tell him a little about myself, which means he is going to ask me to enter my name next. I need to advance the dialogue by pressing A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (1692 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking if I'm a boy or a girl. I will choose boy.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (3807 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game has just started and is presenting the opening screen with the text "Let's begin". I need t...
+[90m🔍 DEBUG: Full AI thinking: The game has just started and is presenting the opening screen with the text "Let's begin". I need to press A to continue and start the game.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4231 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking for my name. I need to press buttons to navigate the character entry screen and i...
+[90m🔍 DEBUG: Full AI thinking: The game is asking for my name. I need to press buttons to navigate the character entry screen and input my name. I should start by pressing UP to move to the first character.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4231 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking for my name. I need to start entering my name.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4243 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am on a screen to enter my name. The cursor is currently on the letter A. I will use the letter A ...
+[90m🔍 DEBUG: Full AI thinking: I am on a screen to enter my name. The cursor is currently on the letter A. I will use the letter A as the first letter of my name.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4228 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am at the name entry screen, and the cursor is on the letter A. I will select this letter for the ...
+[90m🔍 DEBUG: Full AI thinking: I am at the name entry screen, and the cursor is on the letter A. I will select this letter for the name.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4220 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am at the name entry screen. I need to enter a name for the character. I will start with the lette...
+[90m🔍 DEBUG: Full AI thinking: I am at the name entry screen. I need to enter a name for the character. I will start with the letter 'A'.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4244 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am at the name entry screen for my character. I should choose a name. I'll start with the letter "...
+[90m🔍 DEBUG: Full AI thinking: I am at the name entry screen for my character. I should choose a name. I'll start with the letter "A".
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4289 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am on the name entry screen. I need to enter a name for the character. I will start by selecting t...
+[90m🔍 DEBUG: Full AI thinking: I am on the name entry screen. I need to enter a name for the character. I will start by selecting the letter A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4293 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am at the name entry screen. I need to enter my name. I will start by selecting the letter "A".
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4312 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m⚠️ Invalid button 'P', defaulting to A (0)
+[33m🤔 AI THINKING: I am at the name entry screen. I need to choose a name for my character. I will choose the name "RED...
+[90m🔍 DEBUG: Full AI thinking: I am at the name entry screen. I need to choose a name for my character. I will choose the name "RED". First, I will select 'R'.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4284 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m⚠️ Invalid button 'G', defaulting to A (0)
+[33m🤔 AI THINKING: I'm at the name entry screen for my character. I need to start entering a name. The cursor is curren...
+[90m🔍 DEBUG: Full AI thinking: I'm at the name entry screen for my character. I need to start entering a name. The cursor is currently at the first letter, so I will start by choosing a letter. I will move to the letter "G".
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4527 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking if my name is AAAAAAA. I need to say "No" since that's not my name. I will press ...
+[90m🔍 DEBUG: Full AI thinking: The game is asking if my name is AAAAAAA. I need to say "No" since that's not my name. I will press DOWN to select NO.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4521 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking if my name is AAAAAAA. Obviously it's not, so I need to select "NO". The cursor i...
+[90m🔍 DEBUG: Full AI thinking: The game is asking if my name is AAAAAAA. Obviously it's not, so I need to select "NO". The cursor is currently on "NO", so I should press A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4196 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m⚠️ Invalid button 'P', defaulting to A (0)
+[33m🤔 AI THINKING: I am at the name entry screen for the main character. I need to enter a name. I will choose "RED" as...
+[90m🔍 DEBUG: Full AI thinking: I am at the name entry screen for the main character. I need to enter a name. I will choose "RED" as the name. First, I need to select the letter 'R'.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4279 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm at the name entry screen. I need to enter a name. I'll start with 'A'.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4248 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm on the name entry screen and need to choose a name for my character. I will start with the lette...
+[90m🔍 DEBUG: Full AI thinking: I'm on the name entry screen and need to choose a name for my character. I will start with the letter "A."
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4289 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am on the name entry screen. The cursor is currently on the letter A. I should select this letter.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m🎮 Received new screenshot from emulator
+[36m📸 Screenshot captured (4251 bytes)
+[90m🔍 DEBUG: Screenshot path: /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am on the name entry screen. The cursor is on the first letter "A". I will choose A to select the ...
+[90m🔍 DEBUG: Full AI thinking: I am on the name entry screen. The cursor is on the first letter "A". I will choose A to select the first letter.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mDisconnected from emulator at ('127.0.0.1', 50463)
+[35m--------------------------------------------------
+
+[35m[1mWaiting for emulator connection...
+[35m----------------------------------
+
+[35m[1mCleaning up resources...
+[35m------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mConnected to emulator at ('127.0.0.1', 50872)
+[35m---------------------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking me to confirm my name is GEMINI. I will select "YES" to confirm.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am currently talking to someone. I need to press A to continue through the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in a conversation, and this is likely my rival. I need to press A to advance through the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking me to name my rival. I can choose a default name or input a new one. I will go with "GREEN" as the rival name.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is asking for the rival's name. The cursor is on GREEN. I'll select GREEN as the rival's name.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm being asked a question. The options are YES and NO. I should choose YES by pressing A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in a dialogue with Green, the rival. I need to press A to continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I just named my character. Now I need to advance to the next screen.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is displaying opening dialogue. I need to advance through the dialogue. Pressing A is the standard way to advance dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is giving me an introductory message. I need to press a button to advance past this screen. A is the standard button to interact or advance dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am currently in my room in Pallet Town. To progress, I should leave the house. I will move down to leave the room.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room in Pallet Town. I need to leave the house to find Professor Oak. I will try to leave by moving down.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room at the beginning of the game. I need to leave the house to find Professor Oak. I will move down to exit the room.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am inside my house in Pallet Town. I need to leave the house to find Professor Oak. I should walk towards the bottom of the screen to exit the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room in Pallet Town, I should go to Professor Oak's lab to get my first Pokémon. I need to leave the house. I should walk towards the bottom of the screen to exit the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room at the start of the game. I should leave my house and go north to find Professor Oak and get my first Pokémon. I will move down to exit the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room in Pallet Town, and I need to leave the house. The doorway is above me so I should move up.
+[36m👆 AI ACTION: Pressing [1mUP[22m (index: 6)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am inside my house at the starting point of the game. I need to leave the house to progress the story. I should move towards the bottom of the screen to exit.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room in Pallet Town. I need to leave the house and go find Professor Oak to get my first Pokemon. I will walk down.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room in my house. I need to leave the room to find Professor Oak. I should try to move down to exit the room.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my room. I need to leave to find Professor Oak. I should walk towards the bottom of the screen to exit the room.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm in my room and want to leave to explore and find Professor Oak. Moving down seems like the most logical direction to exit the room.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room at the start of the game. To progress, I need to leave the house and find Professor Oak. I should move down to exit the room.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I'm currently in my character's house. I need to leave the house to progress the game. The door is presumably at the bottom of the screen, so I need to move down.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my house, in Pallet Town, and I need to leave and find Professor Oak. I should try to move down, towards the exit of the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am in my room. I should leave my house to go find Professor Oak. To leave, I need to move towards the bottom of the screen.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mCleaning up resources...
+
+[35m[1mDisconnected from emulator at ('127.0.0.1', 50872)
+[35m------------------------
+[35m--------------------------------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[33m⚠️ Port 8888 is already in use. Trying to release it...
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mConnected to emulator at ('127.0.0.1', 51045)
+[35m---------------------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The screen is just a blue screen with white stars which means the game might be loading or there could be some sort of transition happening. I will wait and then press A to see if it will advance to the next scene.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The screen shows a Charizard. It's likely a title screen or cutscene. I should press A to advance.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am presented with a screen that explains the controls of the game. The prompt "@NEXT" is visible indicating that I need to progress through the text to continue learning about the controls. Pressing "A" seems like the correct choice to advance.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The screen shows the controls and their functions. I want to get out of this menu and back to the game. B is used to exit.
+[31m👆 AI ACTION: Pressing [1mB[22m (index: 1)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is explaining the controls. I should press A to continue to the next page.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is displaying instructions. The top right corner says "ONEXT" and "BACK". The instructions describe the function of the directional buttons, A, and B buttons. I want to proceed past this screen. Pressing A, the "NEXT" button, seems like the correct option.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The screen shows the game's help menu explaining the functions of the buttons. I don't need help so I will exit the menu. I should press the B button to go back.
+[31m👆 AI ACTION: Pressing [1mB[22m (index: 1)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am at the help screen which explains the controls. I want to exit this menu and get back to playing the game. The top right corner has a 'Back' button assigned to B.
+[31m👆 AI ACTION: Pressing [1mB[22m (index: 1)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is explaining the controls to me. The message says "The various buttons will be explained in the order of their importance." I should press A to advance to the next message.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am currently presented with the game's control explanations. I will press A to advance to the next page of information.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is giving me instructions about the controls. I want to exit this screen and continue playing the game. The prompt says "OBACK", so I need to press B to go back.
+[31m👆 AI ACTION: Pressing [1mB[22m (index: 1)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The screen shows a guide for the controls. I want to exit this screen so I will press B to go back.
+[31m👆 AI ACTION: Pressing [1mB[22m (index: 1)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The game is explaining the controls. I need to press A to continue to the next page of the explanation.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[31m❌ Screenshot file not found at /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+screenshot
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: The screenshot shows the controls. I should press A to continue to the next help screen.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am currently in a help menu that explains the controls of the game. I should exit this screen so I can move on. I should press B to exit the menu.
+[31m👆 AI ACTION: Pressing [1mB[22m (index: 1)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am currently presented with instructions. I should continue to the next page of instructions. The prompt suggests using the A button to progress.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: This screen is giving instructions on how to play the game. I want to get out of this screen and back to the game. Since there is "BACK" listed near the top I'm going to guess that pressing B will take me back to the game.
+[31m👆 AI ACTION: Pressing [1mB[22m (index: 1)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[33m🤔 AI THINKING: I am viewing the help screen which explains the controls. I can press A to go to the next page and see more instructions, or B to go back to the game. For now, I want to progress, so I will press A to go to the next page of instructions.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+
+[35m[1mDisconnected from emulator at ('127.0.0.1', 51045)
+[35m--------------------------------------------------
+
+[35m[1mCleaning up resources...
+[35m------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
