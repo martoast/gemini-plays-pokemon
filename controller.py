@@ -2,7 +2,7 @@
 import os
 import socket
 import time
-import threading  # Add this line
+import threading
 import json
 import re
 import PIL.Image
@@ -31,6 +31,7 @@ class PokemonGameController:
         # Game state variables
         self.notepad_path = self.config['notepad_path']
         self.screenshot_path = self.config['screenshot_path']
+        self.thinking_history_path = os.path.join(os.path.dirname(self.notepad_path), 'thinking_history.txt')
         self.current_client = None
         self.running = True
         self.last_decision_time = 0
@@ -45,13 +46,15 @@ class PokemonGameController:
         # Initialize the logger
         self.logger = PokemonLogger(debug_mode=self.debug_mode)
         
-        # Initialize notepad if it doesn't exist
+        # Initialize notepad and thinking history if they don't exist
         self.initialize_notepad()
+        self.initialize_thinking_history()
         
         self.logger.info("Controller initialized")
         self.logger.debug(f"API Key: {self.config['api_key'][:5]}...{self.config['api_key'][-3:]}")
         self.logger.debug(f"Model: {self.config['model_name']}")
         self.logger.debug(f"Notepad path: {self.notepad_path}")
+        self.logger.debug(f"Thinking history path: {self.thinking_history_path}")
         self.logger.debug(f"Screenshot path: {self.screenshot_path}")
         
         # Set up the socket after logger is initialized
@@ -151,6 +154,13 @@ class PokemonGameController:
             if 'screenshot_path' in config and not os.path.isabs(config['screenshot_path']):
                 config['screenshot_path'] = os.path.abspath(config['screenshot_path'])
                 
+            # Set default values for thinking history parameters if not provided
+            if 'thinking_history_max_chars' not in config:
+                config['thinking_history_max_chars'] = 20000
+                
+            if 'thinking_history_keep_entries' not in config:
+                config['thinking_history_keep_entries'] = 5
+                
             return config
         except Exception as e:
             print(f"Error loading config: {e}")
@@ -163,6 +173,8 @@ class PokemonGameController:
                 'notepad_path': os.path.abspath('notepad.txt'),
                 'screenshot_path': os.path.abspath('data/screenshots/screenshot.png'),
                 'decision_cooldown': 3,  # 3 seconds between LLM decisions
+                'thinking_history_max_chars': 20000,  # Maximum characters in thinking history before trimming
+                'thinking_history_keep_entries': 5,    # Number of recent thinking entries to keep when trimming
                 'debug_mode': True
             }
 
@@ -179,6 +191,15 @@ class PokemonGameController:
                 f.write("## Game Progress\n")
                 f.write("- Beginning journey\n\n")
 
+    def initialize_thinking_history(self):
+        """Initialize the thinking history file if it doesn't exist"""
+        if not os.path.exists(self.thinking_history_path):
+            os.makedirs(os.path.dirname(self.thinking_history_path), exist_ok=True)
+            timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+            with open(self.thinking_history_path, 'w') as f:
+                f.write(f"# Pokémon Game AI Thinking History\n\n")
+                f.write(f"Started: {timestamp}\n\n")
+
     def read_notepad(self):
         """Read the current notepad content"""
         try:
@@ -188,6 +209,15 @@ class PokemonGameController:
             print(f"Error reading notepad: {e}")
             return "Error reading notepad"
 
+    def read_thinking_history(self):
+        """Read the current thinking history content"""
+        try:
+            with open(self.thinking_history_path, 'r') as f:
+                return f.read()
+        except Exception as e:
+            print(f"Error reading thinking history: {e}")
+            return "Error reading thinking history"
+
     def update_notepad(self, new_content):
         """Update the notepad with new content"""
         try:
@@ -196,6 +226,35 @@ class PokemonGameController:
             print("Notepad updated")
         except Exception as e:
             print(f"Error updating notepad: {e}")
+
+    def update_thinking_history(self, new_thinking):
+        """Update the thinking history with new content"""
+        try:
+            timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+            
+            # Get existing history, but limit to recent entries if too large
+            history_content = self.read_thinking_history()
+            
+            # If history gets too long, keep only the most recent entries
+            max_chars = self.config['thinking_history_max_chars']
+            keep_entries = self.config['thinking_history_keep_entries']
+            
+            if len(history_content) > max_chars:
+                # Split by timestamps and keep only the most recent ones
+                entries = history_content.split("## Thinking")
+                # Keep header and last N entries based on config
+                if len(entries) > keep_entries + 1:  # +1 for the header
+                    history_content = entries[0] + "".join(entries[-(keep_entries):])
+                    self.logger.debug(f"Trimmed thinking history to {keep_entries} entries")
+            
+            # Add new thinking with timestamp
+            with open(self.thinking_history_path, 'w') as f:
+                f.write(history_content)
+                f.write(f"\n## Thinking {timestamp}\n{new_thinking}\n")
+            
+            self.logger.debug("Thinking history updated")
+        except Exception as e:
+            print(f"Error updating thinking history: {e}")
 
     def summarize_notepad_if_needed(self):
         """Summarize notepad if it gets too long, keeping the structure intact"""
@@ -254,8 +313,9 @@ class PokemonGameController:
             return None  # Skip decision making during cooldown
             
         try:
-            # Read the notepad
+            # Read the notepad and thinking history
             notepad_content = self.read_notepad()
+            thinking_history = self.read_thinking_history()
             
             # Use provided path or default
             path_to_use = screenshot_path if screenshot_path else self.screenshot_path
@@ -267,7 +327,7 @@ class PokemonGameController:
             # Load the screenshot
             image = PIL.Image.open(path_to_use)
             
-            # Simple prompt without hardcoded game knowledge
+            # Enhanced prompt with thinking history
             prompt = f"""
                 You are Gemini, an AI playing Pokémon. Look at the screenshot and make decisions to progress in the game.
                 
@@ -277,6 +337,9 @@ class PokemonGameController:
                 
                 ## Your notepad (your memory):
                 {notepad_content}
+                
+                ## Your recent thinking:
+                {thinking_history}
                 
                 ## Controls Available:
                 - A: Confirm/Select/Interact
@@ -362,6 +425,8 @@ class PokemonGameController:
         # Extract thinking
         if think_match:
             thinking = think_match.group(1).strip()
+            # Save thinking to history
+            self.update_thinking_history(thinking)
             
         # Extract button press
         if button_match:
@@ -459,7 +524,6 @@ class PokemonGameController:
             client_socket.close()
         except:
             pass
-
 
     def handle_client_connection(self, client_socket, client_address):
         """Wrapper around handle_client to properly handle connection errors"""

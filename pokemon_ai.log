@@ -3975,3 +3975,533 @@ screenshot
 [35m[1mClosing all client connections...
 [35m---------------------------------
 [32m✅ Server shut down cleanly
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Thinking history path: /Users/alex/Documents/gemini-plays-pokemon/thinking_history.txt
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Thinking history path: /Users/alex/Documents/gemini-plays-pokemon/thinking_history.txt
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[33m⚠️ Port 8888 is already in use. Trying to release it...
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mConnected to emulator at ('127.0.0.1', 52081)
+[35m---------------------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: The game is at the title screen, prompting me to press start.
+[34m👆 AI ACTION: Pressing [1mSTART[22m (index: 3)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: The game is explaining the controls. Pressing A should move to the next screen.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: The game is still explaining the controls. The screen says NEXT in the top right corner, suggesting that pressing A will move to the next screen and continue the tutorial.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: The game is still explaining the controls. "NEXT" is shown in the top right of the screen, indicating that pressing A will advance to the next screen.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: The game is still in tutorial mode, explaining how to play the game. The word "NEXT" is in the top right corner, indicating that pressing A will progress to the next screen of the tutorial.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: The game is still in tutorial mode, giving tips about playing the game. The word "NEXT" is in the top right corner, so I should press A to continue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: The tutorial is instructing the player to press the A button to start the adventure. The word "NEXT" is also shown in the top right of the screen, so pressing A will progress the tutorial.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is now on screen. It is likely he will be talking to me, so I should press A to progress the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking. Pressing A will likely progress the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking to me. The text box has the standard continuation arrow. Pressing A will advance the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is introducing himself. The arrow at the bottom of the dialogue box indicates that there is more to read. I should press A to continue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is still introducing himself. The downward arrow indicates that the dialogue continues, so I need to press A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking and the dialogue box has an arrow indicating more text. I need to press A to continue reading.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is still talking. The red arrow indicates that the dialogue continues, so I should press A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking, and the text box has the standard red arrow at the bottom, indicating more text. Therefore, I should press A to continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking, and the text box has the standard red arrow at the bottom, indicating more text. Therefore, I should press A to continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is asking me to tell him about myself. The text box has the standard red arrow at the bottom, indicating more text. Therefore, I should press A to continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is asking me if I am a boy. The dialogue is not complete on the screen, as it ends with "Or are you a". The red arrow is missing so there may be a prompt after this. Pressing A will continue the dialogue and likely prompt me to select my gender.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is prompting me to input my name. The dialogue is complete on the screen and the red arrow indicates that I can progress by pressing A.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m⚠️ Invalid button 'G', defaulting to A (0)
+[33m🤔 AI THINKING: Professor Oak has prompted me to input my name. The available controls are the letters of the alphabet as well as lower case. I should start inputting my name, which is Gemini. I need to first select "G", which is the first letter of my name.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I need to input the name "Gemini". The cursor is currently on the letter "A". I need to move it to "G". To do this, I need to press the down button once.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I need to input the name "Gemini". The cursor is currently on the letter "A". I need to move it to "G". To do this, I need to press the down button once.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[31m❌ Screenshot file not found at /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+screenshot
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am currently inputting my name, which is Gemini. The cursor is currently on the letter "A". I need to move it to "G". To do this, I need to press the down button once.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am inputting my name, Gemini. The cursor is currently on "A", and I need to move it to "G". I can do this by pressing the down button once.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am currently inputting my name, Gemini. The cursor is currently on the letter "A". I need to move it to "G". I can do this by pressing the down button once.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am currently inputting my name, Gemini. The cursor is currently on the letter "A". I need to move it to "G". I can do this by pressing the DOWN button once.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mCleaning up resources...
+
+[35m[1mDisconnected from emulator at ('127.0.0.1', 52081)
+[35m------------------------
+[35m--------------------------------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
+
+[36m================================================================================
+[36m[1m                       Pokémon Game AI Logger Initialized                       
+[36m================================================================================
+
+[37mController initialized
+[90m🔍 DEBUG: API Key: AIzaS...ta0
+[90m🔍 DEBUG: Model: gemini-2.0-flash
+[90m🔍 DEBUG: Notepad path: /Users/alex/Documents/gemini-plays-pokemon/notepad.txt
+[90m🔍 DEBUG: Thinking history path: /Users/alex/Documents/gemini-plays-pokemon/thinking_history.txt
+[90m🔍 DEBUG: TCP keepalive options not fully supported on this platform
+[32m✅ Socket server set up on 127.0.0.1:8888
+
+[36m================================================================================
+[36m[1m                        Starting Pokémon Game Controller                        
+[36m================================================================================
+
+
+[35m[1mConnected to emulator at ('127.0.0.1', 52439)
+[35m---------------------------------------------
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak has confirmed that my name is Gemini and is asking if this is correct. The cursor is on "YES". I should confirm that my name is Gemini by pressing the A button.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking to me. The downward arrow indicates there is more to read in the dialogue box. I should press A to continue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking about my rival. The red arrow at the bottom indicates there is more dialogue. I should press A to continue reading.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is asking me to name my rival. The choices are NEW NAME, GREEN, GARY, KAZ, and TORU. I will choose the default name, GARY. I need to move the cursor from NEW NAME to GARY. This requires pressing the DOWN button twice.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I need to input my rival's name. The cursor is currently on "GREEN". I want to select "GARY". I need to press the DOWN button once to move the cursor to "GARY".
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I have already moved the cursor to "GARY". Now I need to select that name by pressing the A button.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is confirming that I named my rival Gary. The cursor is already on YES so I should press A to confirm.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking and the dialogue box has a red arrow, indicating that there is more to read. I should press A to continue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking to me, using my name. There is a red arrow at the bottom, indicating that there is more text. I should press A to continue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is talking about my Pokémon legend beginning. The red arrow at the bottom of the text box indicates that there is more dialogue to read. I should press A to continue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: Professor Oak is speaking to me and the red arrow at the bottom indicates more text. I need to press A to continue the dialogue.
+[32m👆 AI ACTION: Pressing [1mA[22m (index: 0)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am now in my room, standing in front of what appears to be a computer or television. The game has progressed past the opening dialogue with Professor Oak, meaning the character creation is complete. I am now in control of my character. My first goal is to leave the house to find Professor Oak. To do that, I will walk downwards, towards the bottom of the screen.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am in my room, standing in front of a computer/TV. To leave my house, I need to walk down, towards the bottom of the screen.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am in my room and need to leave to find Professor Oak. To do this, I need to walk downwards towards the bottom of the screen to exit the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am in my room and need to leave to find Professor Oak. To do this, I need to walk downwards towards the bottom of the screen to exit the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am in my room, standing in front of a computer/TV. To leave my house, I need to walk down, towards the bottom of the screen.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am in my room and need to leave to find Professor Oak. To do this, I need to walk downwards towards the bottom of the screen to exit the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am in my room and need to leave to find Professor Oak. To do this, I need to walk downwards towards the bottom of the screen to exit the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+[31m❌ Screenshot file not found at /Users/alex/Documents/gemini-plays-pokemon/data/screenshots/screenshot.png
+screenshot
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mSending Screenshot to Gemini
+[35m----------------------------
+[32m✅ Received response from Gemini
+[90m🔍 DEBUG: Thinking history updated
+[33m🤔 AI THINKING: I am in my room and need to leave to find Professor Oak. To do this, I need to walk downwards towards the bottom of the screen to exit the house.
+[36m👆 AI ACTION: Pressing [1mDOWN[22m (index: 7)
+[32m✅ Button command sent to emulator
+[32m🎮 Received new screenshot from emulator
+
+[35m[1mCleaning up resources...
+
+[35m[1mDisconnected from emulator at ('127.0.0.1', 52439)
+[35m------------------------
+[35m--------------------------------------------------
+[32m✅ Cleanup complete
+
+[35m[1mClosing all client connections...
+[35m---------------------------------
+[32m✅ Server shut down cleanly
