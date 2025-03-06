@@ -4,6 +4,7 @@ import socket
 import time
 import threading
 import json
+import re
 import PIL.Image
 import google.generativeai as genai
 import signal
@@ -35,6 +36,11 @@ class PokemonGameController:
         self.last_decision_time = 0
         self.decision_cooldown = self.config['decision_cooldown']
         self.client_threads = []
+        self.debug_mode = self.config.get('debug_mode', False)
+        
+        # Create directories if they don't exist
+        os.makedirs(os.path.dirname(self.notepad_path), exist_ok=True)
+        os.makedirs(os.path.dirname(self.screenshot_path), exist_ok=True)
         
         # Initialize notepad if it doesn't exist
         self.initialize_notepad()
@@ -44,6 +50,7 @@ class PokemonGameController:
         print(f"Model: {self.config['model_name']}")
         print(f"Notepad path: {self.notepad_path}")
         print(f"Screenshot path: {self.screenshot_path}")
+        print(f"Debug mode: {self.debug_mode}")
         
         # Set up signal handlers for proper shutdown
         signal.signal(signal.SIGINT, self.signal_handler)
@@ -136,18 +143,23 @@ class PokemonGameController:
                 'port': 8888,
                 'notepad_path': os.path.abspath('notepad.txt'),
                 'screenshot_path': os.path.abspath('data/screenshots/screenshot.png'),
-                'decision_cooldown': 3  # 3 seconds between LLM decisions
+                'decision_cooldown': 3,  # 3 seconds between LLM decisions
+                'debug_mode': True
             }
 
     def initialize_notepad(self):
-        """Initialize the notepad file if it doesn't exist"""
+        """Initialize the notepad file with a minimal structure"""
         if not os.path.exists(self.notepad_path):
             os.makedirs(os.path.dirname(self.notepad_path), exist_ok=True)
+            timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
             with open(self.notepad_path, 'w') as f:
-                f.write("# Pokémon Red Game AI Notepad\n")
-                f.write("I am playing Pokémon Red. I need to record important information here.\n\n")
-                f.write("## Goals\n- Explore the world\n- Catch and train Pokémon\n- Defeat gym leaders\n\n")
-                f.write("## Current Status\nJust started the game in Pallet Town\n\n")
+                f.write("# Pokémon Game AI Notepad\n\n")
+                f.write(f"Game started: {timestamp}\n\n")
+                f.write("## Game Status\n")
+                f.write("- Just started the game\n\n")
+                f.write("## Objectives\n")
+                f.write("- Progress through the game\n")
+                f.write("- Make strategic decisions\n\n")
 
     def read_notepad(self):
         """Read the current notepad content"""
@@ -168,7 +180,7 @@ class PokemonGameController:
             print(f"Error updating notepad: {e}")
 
     def summarize_notepad_if_needed(self):
-        """Summarize notepad if it gets too long"""
+        """Summarize notepad if it gets too long, keeping the structure intact"""
         notepad_content = self.read_notepad()
         
         # If notepad is over 10KB, ask LLM to summarize it
@@ -176,13 +188,40 @@ class PokemonGameController:
             print("Notepad is getting too long, summarizing...")
             
             try:
+                summarize_prompt = """
+                Please summarize the following game notes into a more concise format.
+                
+                Maintain these exact sections:
+                - Long-term Goals
+                - Current Objectives 
+                - Team Status
+                - Inventory
+                - Game Progress
+                
+                Condense repetitive information but preserve all important game state details:
+                - Current location and next destination
+                - All Pokémon on the team with their levels, types and moves
+                - Important items in the inventory
+                - Badges collected and significant events
+                - Current strategy and immediate plans
+                
+                Format the response as a well-structured markdown document with clear headings and bullet points.
+                
+                Here are the notes to summarize:
+                
+                """
+                
                 response = self.model.generate_content(
-                    "Please summarize the following game notes into a more concise format while preserving all important information:\n\n" + 
-                    notepad_content
+                    summarize_prompt + notepad_content
                 )
                 
                 if response:
                     summarized_content = response.text
+                    
+                    # Add a note about summarization
+                    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                    summarized_content += f"\n\n## Note\nNotepad was summarized at {timestamp} to reduce size while preserving important information."
+                    
                     self.update_notepad(summarized_content)
                     print("Notepad summarized successfully")
             except Exception as e:
@@ -213,43 +252,37 @@ class PokemonGameController:
             
             # Construct the prompt for Gemini with enhanced strategic thinking
             prompt = f"""
-                You are an AI playing Pokémon Red. Your goal is to make progress in the game by exploring, catching Pokémon, and battling trainers.
+                You are Gemini, an AI playing Pokémon FireRed. Look at the screenshot and make decisions to progress in the game.
                 
-                First, carefully analyze the current game screenshot:
-                1. What screen are you on? (Title, dialogue, menu, name entry, overworld, battle, etc.)
-                2. What UI elements are visible?
-                3. What text is being displayed?
-                4. What options are available to select?
+                ## Game Context
+                - You are playing Pokémon and need to progress through the game
+                - You're trying to make good strategic decisions based on what you see
+                - Think carefully about what you see on screen and what action makes the most sense
                 
-                Second, develop a strategic plan:
-                - If you're on a name entry screen: Use directional buttons to navigate to letters, then press A to select them
-                - If you're in a menu: Use UP/DOWN to navigate options, A to select
-                - If you're in dialogue: Press A to advance or B to cancel
-                - If you're in the overworld: Use directional buttons to move toward your goal
-                
-                NOTEPAD:
+                ## Your notepad (your memory):
                 {notepad_content}
                 
-                CURRENT CONTROLS:
-                For standard navigation and menu selection:
-                - A: Select/Confirm
+                ## Controls Available:
+                - A: Confirm/Select/Interact
                 - B: Cancel/Back
                 - START: Open menu
-                - SELECT: Cycle through options
-                - UP, DOWN, LEFT, RIGHT: Navigate menus and move character
+                - SELECT: Cycle options
+                - UP, DOWN, LEFT, RIGHT: Move/Navigate
                 
-                Based on the screenshot, decide what to do next. Think step-by-step about the best button to press.
+                ## Your task:
+                1. Look carefully at the screenshot
+                2. Think about what's happening and what you should do
+                3. Choose ONE button to press
+                4. Update your notepad with important information
                 
-                Always respond with valid button names only!
-                Respond in the exact format:
-                BUTTON: [button name]
-                NOTEPAD: [detailed description of what you see and your plan OR "no change"]
+                First think step by step about what you see and what you should do. Consider ALL buttons, not just A.
                 
-                For example:
-                BUTTON: RIGHT
-                NOTEPAD: I'm at the name entry screen. I need to navigate to the letter "R" by pressing RIGHT twice, then DOWN once.
+                Respond in this exact format:
+                THINK: [Your detailed analysis of the current situation and reasoning]
+                BUTTON: [single button name]
+                NOTEPAD: [one of: "no change" OR specific information to add]
                 
-                Buttons should be one of these ONLY: UP, DOWN, LEFT, RIGHT, A, B, START, SELECT
+                Buttons must be EXACTLY one of: A, B, START, SELECT, UP, DOWN, LEFT, RIGHT
                 """
             
             print("Sending screenshot to Gemini...")
@@ -261,8 +294,12 @@ class PokemonGameController:
                 print(f"Received response from Gemini: {response.text[:100]}...")
                 
                 # Parse response for button press and notepad update
-                button_press, notepad_update = self.parse_llm_response(response.text)
+                button_press, notepad_update, thinking = self.parse_llm_response(response.text)
                 self.last_decision_time = current_time
+                
+                # Log the AI's thinking for debugging
+                if thinking:
+                    print(f"AI's thinking: {thinking[:150]}...")
                 
                 return {
                     'button': button_press,
@@ -277,31 +314,52 @@ class PokemonGameController:
         return None
 
     def parse_llm_response(self, response_text):
-        """Parse the LLM response to extract button press and notepad update"""
+        """Parse the LLM response to extract button press, notepad update and thinking"""
         button_press = None
         notepad_update = None
-
-        lines = response_text.split("\n")
+        thinking = None
+        
+        # Button mapping
         button_map = {
             "A": 0, "B": 1, "SELECT": 2, "START": 3,
             "RIGHT": 4, "LEFT": 5, "UP": 6, "DOWN": 7,
             "R": 8, "L": 9
         }
-
-        for line in lines:
-            if line.startswith("BUTTON:"):
-                button_value = line[7:].strip().upper()
-                button_press = button_map.get(button_value, 0)  # Default to A (0)
+        
+        # Find each section
+        think_match = re.search(r"THINK:\s*(.*?)(?=BUTTON:|$)", response_text, re.DOTALL)
+        button_match = re.search(r"BUTTON:\s*(.*?)(?=NOTEPAD:|$)", response_text, re.DOTALL)
+        notepad_match = re.search(r"NOTEPAD:\s*(.*?)$", response_text, re.DOTALL)
+        
+        # Extract thinking
+        if think_match:
+            thinking = think_match.group(1).strip()
+            print(f"Extracted thinking: {thinking[:50]}...")
+        
+        # Extract button press
+        if button_match:
+            button_value = button_match.group(1).strip().upper()
+            if button_value in button_map:
+                button_press = button_map[button_value]
                 print(f"Parsed button press: {button_value} -> {button_press}")
-
-            elif line.startswith("NOTEPAD:"):
-                notepad_content = line[8:].strip()
-                if notepad_content.lower() != "no change":
-                    current_notepad = self.read_notepad()
-                    notepad_update = current_notepad + "\n" + notepad_content
-                    print(f"Adding to notepad: {notepad_content[:50]}...")
-
-        return button_press, notepad_update
+            else:
+                # Default to A if invalid button
+                button_press = 0
+                print(f"Invalid button '{button_value}', defaulting to A (0)")
+        
+        # Extract notepad update
+        if notepad_match:
+            notepad_content = notepad_match.group(1).strip()
+            if notepad_content.lower() != "no change":
+                # Add timestamp to notepad entries
+                timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                notepad_entry = f"\n## Update {timestamp}\n{notepad_content}\n"
+                
+                current_notepad = self.read_notepad()
+                notepad_update = current_notepad + notepad_entry
+                print(f"Adding to notepad: {notepad_content[:50]}...")
+        
+        return button_press, notepad_update, thinking
 
     def handle_client(self, client_socket, client_address):
         """Handle communication with the emulator client"""
@@ -375,6 +433,34 @@ class PokemonGameController:
         except:
             pass
 
+    def log_debug(self, message):
+        """Log debug messages if debug mode is enabled"""
+        if self.debug_mode:
+            timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+            print(f"[DEBUG {timestamp}] {message}")
+    
+    def extract_game_info(self, screenshot_path):
+        """
+        Extract useful game information from screenshots
+        This could be expanded with OCR or more advanced CV techniques
+        """
+        try:
+            # This is a placeholder for future OCR/CV improvements
+            # We could use OCR to extract text from the game screen
+            # For now, we'll just return the basic file info
+            if os.path.exists(screenshot_path):
+                file_size = os.path.getsize(screenshot_path)
+                timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                return {
+                    "timestamp": timestamp,
+                    "file_size": file_size,
+                    "path": screenshot_path
+                }
+            return None
+        except Exception as e:
+            print(f"Error extracting game info: {e}")
+            return None
+
     def start(self):
         """Start the controller server"""
         print(f"Starting Pokémon Game Controller on {self.config['host']}:{self.config['port']}")
@@ -385,7 +471,6 @@ class PokemonGameController:
                     print("Waiting for emulator connection...")
                     client_socket, client_address = self.server_socket.accept()
                     client_socket.setblocking(0)
-
                     # Start client handler in a separate thread
                     client_thread = threading.Thread(
                         target=self.handle_client,
@@ -405,7 +490,6 @@ class PokemonGameController:
                     if self.running:  # Only log if we're still supposed to be running
                         print(f"Error in main loop: {e}")
                     break
-
         finally:
             # Ensure we clean up properly
             self.running = False
@@ -418,7 +502,6 @@ class PokemonGameController:
             
             self.cleanup()
             print("Server shut down cleanly.")
-
 
 if __name__ == "__main__":
     controller = PokemonGameController()
