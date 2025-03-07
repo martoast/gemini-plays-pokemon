@@ -305,7 +305,7 @@ class PokemonGameController:
                 print(f"Error summarizing notepad: {e}")
 
     def process_screenshot(self, screenshot_path=None):
-        """Process the latest screenshot with Gemini Vision"""
+        """Process the latest screenshot with Gemini Vision, also sending previous screenshot"""
         current_time = time.time()
         
         # Check if we should make a new decision based on cooldown
@@ -324,16 +324,53 @@ class PokemonGameController:
                 self.logger.error(f"Screenshot not found at {path_to_use}")
                 return None
             
-            # Load the screenshot
-            image = PIL.Image.open(path_to_use)
+            # Setup previous screenshot path
+            comparison_folder = os.path.join(os.path.dirname(self.screenshot_path), 'comparison')
+            os.makedirs(comparison_folder, exist_ok=True)
+            prev_screenshot_path = os.path.join(comparison_folder, 'previous_screenshot.png')
+            last_action_path = os.path.join(comparison_folder, 'last_action.txt')
             
-            # Enhanced prompt with thinking history
+            # Get the last action (button pressed)
+            last_action = "NONE (First action)"
+            if os.path.exists(last_action_path):
+                try:
+                    with open(last_action_path, 'r') as f:
+                        last_action = f.read().strip()
+                except:
+                    pass
+            
+            # Load current screenshot
+            current_image = PIL.Image.open(path_to_use)
+            
+            # Check if we have a previous screenshot
+            has_previous = os.path.exists(prev_screenshot_path)
+            previous_image = None
+            
+            if has_previous:
+                previous_image = PIL.Image.open(prev_screenshot_path)
+            
+            # Craft the prompt with guidance for comparing screenshots
             prompt = f"""
-                You are Gemini, an AI playing Pokémon. Look at the screenshot and make decisions to progress in the game.
+                You are Gemini, an AI playing Pokémon Fire Red. Look at the screenshots and make decisions to progress in the game.
                 
                 ## Game Context
-                - You are playing Pokémon and need to progress through the game
-                - Use the controls to navigate and interact with the game
+                - You are playing Pokémon Fire Red for Game Boy Advance
+                - You are at the beginning of the game in Pallet Town
+                - The game has buildings, routes, and towns to navigate through
+                
+                ## Screenshots Information
+                - You are receiving TWO screenshots: current and previous state
+                - The first image is your CURRENT view
+                - The second image is the PREVIOUS view (before your last action)
+                - Your last action was: {last_action}
+                - IMPORTANT: Compare these images to see if your last action had any effect
+                - If the character position is the same in both images, it means you hit a WALL or OBSTACLE
+                
+                ## Pokémon Game Navigation Rules:
+                - Indoor spaces: Rooms have walls and you CAN'T walk through them
+                - In your bedroom, the STAIRS are the YELLOW LADDER in the TOP LEFT corner
+                - Carpets/Rugs indicate walkable areas in rooms
+                - To use stairs or doors, stand DIRECTLY IN FRONT of them and press A
                 
                 ## Your notepad (your memory):
                 {notepad_content}
@@ -345,29 +382,38 @@ class PokemonGameController:
                 - A: Confirm/Select/Interact
                 - B: Cancel/Back
                 - START: Open menu
-                - SELECT: Cycle options
                 - UP, DOWN, LEFT, RIGHT: Move/Navigate
                 
                 ## Your task:
-                1. Look at the screenshot and determine what's happening
-                2. Think about what button to press next
-                3. Choose ONE button to press
-                4. Update your notepad if needed
-                
-                Think carefully about what you see and which button would be best to press.
+                1. FIRST: Compare the current and previous screenshots to see if your last action ({last_action}) caused movement
+                2. If you didn't move, conclude there's a wall in that direction and try a DIFFERENT direction
+                3. If you're in the bedroom, locate the yellow ladder (stairs) in the top left corner
+                4. Choose ONE button to press that will make progress
+                5. Update your notepad if needed
                 
                 Respond in this exact format:
-                THINK: [Your detailed analysis of the current situation and reasoning]
-                BUTTON: [single button name]
+                THINK: [First analyze if your last action caused movement, then analyze the current situation]
+                BUTTON: [single button name (A, B, START, UP, DOWN, LEFT, RIGHT). YOU MUST include the button you want to press.]
                 NOTEPAD: [one of: "no change" OR specific information to add]
                 
-                Buttons must be EXACTLY one of: A, B, START, SELECT, UP, DOWN, LEFT, RIGHT
+                Buttons must be EXACTLY one of: A, B, START, UP, DOWN, LEFT, RIGHT
                 """
             
-            self.logger.section("Sending Screenshot to Gemini")
+            self.logger.section("Sending Screenshots to Gemini")
             
-            # Generate response from Gemini
-            response = self.model.generate_content([prompt, image])
+            # Save current screenshot as previous for next time
+            try:
+                current_image.save(prev_screenshot_path)
+            except Exception as e:
+                self.logger.error(f"Error saving previous screenshot: {e}")
+            
+            # Generate response from Gemini - send both current and previous screenshots if available
+            if has_previous and previous_image:
+                self.logger.info("Sending both current and previous screenshots for comparison")
+                response = self.model.generate_content([prompt, current_image, previous_image])
+            else:
+                self.logger.info("First screenshot - no previous for comparison")
+                response = self.model.generate_content([prompt, current_image])
             
             if response:
                 self.logger.success("Received response from Gemini")
@@ -385,6 +431,14 @@ class PokemonGameController:
                                 4: "RIGHT", 5: "LEFT", 6: "UP", 7: "DOWN",
                                 8: "R", 9: "L"}
                     button_name = button_names.get(button_press, "UNKNOWN")
+                    
+                    # Save the button name for next comparison
+                    try:
+                        with open(last_action_path, 'w') as f:
+                            f.write(button_name)
+                    except Exception as e:
+                        self.logger.error(f"Error saving last action: {e}")
+                    
                     self.logger.ai_action(button_name, button_press)
                 
                 if notepad_update:

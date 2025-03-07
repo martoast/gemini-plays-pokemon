@@ -2,3 +2,6 @@
 pokemon-red.gba
 pokemon-red.sav
 config.json
+pokemon_ai.log
+thinking_history.txt
+data/*
